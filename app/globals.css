@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Page + containers */
+body { @apply bg-background text-text; }
+.container { @apply max-w-3xl mx-auto px-4; }
+
+/* Surfaces */
+.card { @apply bg-surface rounded-xl shadow-card p-5 border border-gray-700; }
+
+/* Buttons */
+.btn { @apply w-full h-12 rounded-md px-4 text-sm font-medium transition flex items-center justify-center; }
+.btn-primary { @apply bg-primary text-white hover:bg-primaryHover; }
+.btn-outline { @apply border border-gray-600 text-text hover:bg-gray-800; }
+
+/* Form */
+.input { @apply w-full h-12 rounded-md border border-gray-700 bg-surface px-3 text-sm text-text focus:outline-none focus:ring-2 focus:ring-primary; }
+.label { @apply block text-sm font-medium mb-1 text-text; }
+.help { @apply text-xs text-muted; }
